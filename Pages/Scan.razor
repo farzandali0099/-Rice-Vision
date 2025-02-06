@@ -1,0 +1,107 @@
+﻿@page "/scan"
+@using RiceVision.Services
+@inject RiceDetectionService DetectionService
+@inject ILogger<Scan> Logger
+
+<h1 class="text-3xl font-bold text-center my-8">Rice Infection Scanner</h1>
+
+<div class="container mx-auto">
+    <div class="card p-6 shadow-md rounded-lg">
+        <h2 class="text-2xl mb-4">Upload Rice Image</h2>
+
+        <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2">
+                Select an Image:
+            </label>
+            <InputFile OnChange="OnImageSelected" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" />
+        </div>
+
+        @if (!string.IsNullOrEmpty(imagePreviewUrl))
+        {
+            <div class="mb-6">
+                <img src="@imagePreviewUrl" class="rounded shadow" style="max-width: 300px;" />
+            </div>
+        }
+
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                @onclick="PredictInfection"
+                disabled="@(uploadedImage == null)">
+            Check Infection Status
+        </button>
+
+        @if (predictionResult.HasValue)
+        {
+            <div class="mt-6 p-4 rounded-lg shadow @(predictionResult.Value ? "border-red-500 bg-red-100 text-red-800" : "border-green-500 bg-green-100 text-green-800")">
+                <p class="text-xl font-bold">@resultText</p>
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="mt-6 p-4 rounded-lg shadow bg-yellow-100 text-yellow-800">
+                <p class="text-xl font-bold">Error: @errorMessage</p>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private IBrowserFile uploadedImage;
+    private string imagePreviewUrl;
+    private bool? predictionResult;
+    private string resultText = "Healthy";
+    private string errorMessage;
+
+    private async Task OnImageSelected(InputFileChangeEventArgs e)
+    {
+        try
+        {
+            errorMessage = null;
+            uploadedImage = e.File;
+
+            if (uploadedImage != null)
+            {
+                const long maxAllowedSize = 10 * 1024 * 1024; // 10MB
+                using var stream = uploadedImage.OpenReadStream(maxAllowedSize);
+                using var memoryStream = new MemoryStream();
+                await stream.CopyToAsync(memoryStream);
+                imagePreviewUrl = $"data:{uploadedImage.ContentType};base64,{Convert.ToBase64String(memoryStream.ToArray())}";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"File error: {ex.Message}";
+            Logger.LogError(ex, "File upload error");
+        }
+        finally
+        {
+            StateHasChanged();
+        }
+    }
+    private async Task PredictInfection()
+    {
+        try
+        {
+            errorMessage = null;
+            if (uploadedImage == null) return;
+
+            using var stream = uploadedImage.OpenReadStream(10 * 1024 * 1024);
+            using var ms = new MemoryStream();
+            await stream.CopyToAsync(ms);
+
+            predictionResult = await DetectionService.PredictInfection(ms.ToArray());
+            resultText = predictionResult.Value ? "Infected" : "Healthy";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Prediction failed: {ex.Message}";
+            Logger.LogError(ex, "Prediction error");
+            predictionResult = null;
+        }
+        finally
+        {
+            StateHasChanged();
+        }
+    }
+
+}
