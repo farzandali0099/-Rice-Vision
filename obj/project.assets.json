@@ -1,0 +1,476 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Google.Protobuf/3.11.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Keras.NET/3.8.5": {
+        "type": "package",
+        "dependencies": {
+          "Numpy.Bare": "3.8.1.25"
+        },
+        "compile": {
+          "lib/netstandard2.0/Keras.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Keras.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Numpy.Bare/3.8.1.25": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "pythonnet_netstandard_py38_win": "2.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Numpy.Bare.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Numpy.Bare.dll": {}
+        }
+      },
+      "NumSharp.Lite/0.1.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/NumSharp.Lite.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NumSharp.Lite.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Protobuf.Text/0.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.11.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Protobuf.Text.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Protobuf.Text.dll": {}
+        }
+      },
+      "pythonnet_netstandard_py38_win/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Python.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Python.Runtime.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SciSharp.TensorFlow.Redist/2.10.0": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/SciSharp.TensorFlow.Redist.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libtensorflow.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/osx-x64/native/libtensorflow_framework.2.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/tensorflow.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/3.1.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SixLabors.ImageSharp.props": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "TensorFlow.NET/0.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.11.4",
+          "NumSharp.Lite": "0.1.4",
+          "Protobuf.Text": "0.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/TensorFlow.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/TensorFlow.NET.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Google.Protobuf/3.11.4": {
+      "sha512": "dajCxjDCiPyZuqwZCkFJTwhn/0TJ5VesIs4fXvs56ez1VUi68JjhYMMsPjnJ9gcPqJwTMtXMU1WqUdXYiG1x4w==",
+      "type": "package",
+      "path": "google.protobuf/3.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.11.4.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/netstandard1.0/Google.Protobuf.dll",
+        "lib/netstandard1.0/Google.Protobuf.pdb",
+        "lib/netstandard1.0/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Keras.NET/3.8.5": {
+      "sha512": "NFUV194GVq87ZBrUNMrFXy/pMPchh0clyShr4HHoKY+NYaCOIr9kvcRS1hE0rs8S9Adbvt2+gIG9HfNCWikIAg==",
+      "type": "package",
+      "path": "keras.net/3.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "keras.net.3.8.5.nupkg.sha512",
+        "keras.net.nuspec",
+        "lib/netstandard2.0/Keras.dll"
+      ]
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Numpy.Bare/3.8.1.25": {
+      "sha512": "YqbpafFbck+JI0/guhaiJqAqTOKJXGbCfre6PZH+eeQbg27rllyTNPCdw36oLSNzagBIzJjmsGDE61lfSvairg==",
+      "type": "package",
+      "path": "numpy.bare/3.8.1.25",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Numpy.Bare.dll",
+        "numpy.bare.3.8.1.25.nupkg.sha512",
+        "numpy.bare.nuspec"
+      ]
+    },
+    "NumSharp.Lite/0.1.4": {
+      "sha512": "68MzEsVhR8uWqdRsE+OCYfEBiqf2WVzKoFAIYJ0uHEE89VIgxmCENTWSs+tj20WRf+RELdhgzV5EgBE5ZLHx9g==",
+      "type": "package",
+      "path": "numsharp.lite/0.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/NumSharp.Lite.dll",
+        "lib/netstandard2.0/NumSharp.Lite.pdb",
+        "numsharp.lite.0.1.4.nupkg.sha512",
+        "numsharp.lite.nuspec"
+      ]
+    },
+    "Protobuf.Text/0.4.0": {
+      "sha512": "fg7139wyR33UUbqJjRR8LppXORUv6FyrX1ngazHyadVmjnRi0UhwReHKbpi5/54h+PcGyue/DoV3k3IKXKhO/A==",
+      "type": "package",
+      "path": "protobuf.text/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Protobuf.Text.dll",
+        "protobuf.text.0.4.0.nupkg.sha512",
+        "protobuf.text.nuspec"
+      ]
+    },
+    "pythonnet_netstandard_py38_win/2.5.1": {
+      "sha512": "y8D5KG5Z5pFUzxBINwaN6LuM50LpkRV3TD8Lrn9jz1spbT1mBSCeYAzyA8MSo9+Jb3R/evXq0m3+d1KiDGGYUg==",
+      "type": "package",
+      "path": "pythonnet_netstandard_py38_win/2.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Python.Runtime.dll",
+        "lib/netstandard2.0/Python.Runtime.xml",
+        "pythonnet_netstandard_py38_win.2.5.1.nupkg.sha512",
+        "pythonnet_netstandard_py38_win.nuspec"
+      ]
+    },
+    "SciSharp.TensorFlow.Redist/2.10.0": {
+      "sha512": "3mczWI5vX7SuCFAt1F5O+7ZCo2i6UHgWGatoXsIotlZieMvWoRBRUWnChZbPiud3aUtUqI2J9tYfxhHtV1TdKg==",
+      "type": "package",
+      "path": "scisharp.tensorflow.redist/2.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD_PARTY_NOTICES.txt",
+        "build/netstandard2.0/SciSharp.TensorFlow.Redist.props",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/osx-x64/native/libtensorflow.dylib",
+        "runtimes/osx-x64/native/libtensorflow_framework.2.dylib",
+        "runtimes/win-x64/native/tensorflow.dll",
+        "scisharp.tensorflow.redist.2.10.0.nupkg.sha512",
+        "scisharp.tensorflow.redist.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/3.1.6": {
+      "sha512": "dHQ5jugF9v+5/LCVHCWVzaaIL6WOehqJy6eju/0VFYFPEj2WtqkGPoEV9EVQP83dHsdoqYaTuWpZdwAd37UwfA==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/3.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.3.1.6.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "TensorFlow.NET/0.15.0": {
+      "sha512": "RTdO6Ixm0CkJWmFrh1361Ij6a2JNQl6SkBBqw8I9X6JQwBbCe2GYOf3wh39QhO6MKO09t3d7Xp6/CddSYhzTgg==",
+      "type": "package",
+      "path": "tensorflow.net/0.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/TensorFlow.NET.dll",
+        "tensorflow.net.0.15.0.nupkg.sha512",
+        "tensorflow.net.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Keras.NET >= 3.8.5",
+      "SciSharp.TensorFlow.Redist >= 2.10.0",
+      "SixLabors.ImageSharp >= 3.1.6",
+      "TensorFlow.NET >= 0.15.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Farzand\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\EAD\\RiceVision\\RiceVision.csproj",
+      "projectName": "RiceVision",
+      "projectPath": "D:\\EAD\\RiceVision\\RiceVision.csproj",
+      "packagesPath": "C:\\Users\\Farzand\\.nuget\\packages\\",
+      "outputPath": "D:\\EAD\\RiceVision\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Farzand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Keras.NET": {
+            "target": "Package",
+            "version": "[3.8.5, )"
+          },
+          "SciSharp.TensorFlow.Redist": {
+            "target": "Package",
+            "version": "[2.10.0, )"
+          },
+          "SixLabors.ImageSharp": {
+            "target": "Package",
+            "version": "[3.1.6, )"
+          },
+          "TensorFlow.NET": {
+            "target": "Package",
+            "version": "[0.15.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

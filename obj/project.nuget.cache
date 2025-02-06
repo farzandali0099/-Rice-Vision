@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "+gOC9yDDOxU=",
+  "success": true,
+  "projectFilePath": "D:\\EAD\\RiceVision\\RiceVision.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Farzand\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\keras.net\\3.8.5\\keras.net.3.8.5.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\numpy.bare\\3.8.1.25\\numpy.bare.3.8.1.25.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\numsharp.lite\\0.1.4\\numsharp.lite.0.1.4.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\protobuf.text\\0.4.0\\protobuf.text.0.4.0.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\pythonnet_netstandard_py38_win\\2.5.1\\pythonnet_netstandard_py38_win.2.5.1.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\scisharp.tensorflow.redist\\2.10.0\\scisharp.tensorflow.redist.2.10.0.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\sixlabors.imagesharp\\3.1.6\\sixlabors.imagesharp.3.1.6.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Farzand\\.nuget\\packages\\tensorflow.net\\0.15.0\\tensorflow.net.0.15.0.nupkg.sha512"
+  ],
+  "logs": []
+}
